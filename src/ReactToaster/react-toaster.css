@@ -1,0 +1,46 @@
+.react-toaster {
+  width: 98%;
+  left: 0;
+  height: 50px;
+  position: absolute;
+  margin: 15px;
+  box-sizing: content-box;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.toaster-content {
+  top: 15px;
+  position: absolute;
+  font-size: 20px;
+}
+
+.close-btn {
+  float: right;
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+  top: 15px;
+}
+
+.toast-container {
+  box-shadow: 10px 10px grey;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
