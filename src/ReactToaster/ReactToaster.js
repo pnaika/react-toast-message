@@ -24,9 +24,9 @@ class ReactToasterMessage extends Component {
     }
 
     getBannerColor() {
-        const {errorType} = this.props;
+        const {toasterType} = this.props;
 
-        switch (errorType) {
+        switch (toasterType) {
             case 'success': {
                 return 'limegreen';
             }
@@ -82,7 +82,7 @@ class ReactToasterMessage extends Component {
 ReactToasterMessage.defaultProps = {
     showToaster: false,
     toasterMessage: 'Success !!',
-    errorType: 'success',
+    toasterType: 'success',
     position: 'top',
     closeToasterTimings: 5000
 };
@@ -90,7 +90,7 @@ ReactToasterMessage.defaultProps = {
 ReactToasterMessage.propTypes = {
     showToaster: PropTypes.bool,
     toasterMessage: PropTypes.string,
-    errorType: PropTypes.string,
+    toasterType: PropTypes.string,
     position: PropTypes.string,
     closeToasterTimings: PropTypes.number
 };
