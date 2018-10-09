@@ -36,7 +36,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <ReactToasterMessage showToaster={true} toasterType={this.state.toasterType} closeToasterAfterTimer={this.state.toasterType == 'error'}/>
+                <ReactToasterMessage showToaster={true} toasterType={this.state.toasterType}
+                                     closeToasterAfterTimer={this.state.toasterType == 'error'}/>
             </div>
         );
     }
