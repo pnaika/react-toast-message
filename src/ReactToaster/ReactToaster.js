@@ -45,7 +45,7 @@ class ReactToasterMessage extends Component {
         const backGroundColor = this.getBannerColor();
 
         // closes toaster after 5 secs
-        if(closeToasterAfterTimer) {
+        if (closeToasterAfterTimer) {
             setTimeout(() => {
                 this.setState({
                     showToaster: !showToaster
