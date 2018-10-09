@@ -40,12 +40,12 @@ class ReactToasterMessage extends Component {
     }
 
     render() {
-        const {toasterMessage, closeToasterTimings} = this.props;
+        const {toasterMessage, closeToasterTimings, closeToasterAfterTimer} = this.props;
         const {showToaster} = this.state;
         const backGroundColor = this.getBannerColor();
 
         // closes toaster after 5 secs
-        if(showToaster) {
+        if(closeToasterAfterTimer) {
             setTimeout(() => {
                 this.setState({
                     showToaster: !showToaster
@@ -84,7 +84,8 @@ ReactToasterMessage.defaultProps = {
     toasterMessage: 'Success !!',
     toasterType: 'success',
     position: 'top',
-    closeToasterTimings: 5000
+    closeToasterTimings: 5000,
+    closeToasterAfterTimer: true
 };
 
 ReactToasterMessage.propTypes = {
@@ -92,7 +93,8 @@ ReactToasterMessage.propTypes = {
     toasterMessage: PropTypes.string,
     toasterType: PropTypes.string,
     position: PropTypes.string,
-    closeToasterTimings: PropTypes.number
+    closeToasterTimings: PropTypes.number,
+    closeToasterAfterTimer: PropTypes.bool
 };
 
 export default ReactToasterMessage;
