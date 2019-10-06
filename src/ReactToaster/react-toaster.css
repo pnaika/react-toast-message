@@ -2,7 +2,7 @@
   width: 98%;
   left: 0;
   height: 50px;
-  position: absolute;
+  position: relative;
   margin: 15px;
   box-sizing: content-box;
   text-align: center;
@@ -23,9 +23,6 @@
   top: 15px;
 }
 
-.toast-container {
-  box-shadow: 10px 10px grey;
-}
 
 .example-enter {
   opacity: 0.01;

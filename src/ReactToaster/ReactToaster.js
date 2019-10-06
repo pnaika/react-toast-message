@@ -84,7 +84,7 @@ ReactToasterMessage.defaultProps = {
     toasterMessage: 'Success !!',
     toasterType: 'success',
     position: 'top',
-    closeToasterTimings: 5000,
+    closeToasterTimings: 1000,
     closeToasterAfterTimer: true
 };
 
