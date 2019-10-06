@@ -21,7 +21,6 @@ class App extends Component {
         axios
             .get('http://localhost:3000')
             .then(response => {
-                console.log('respo ,', response)
                 this.setState({
                     toasterType: 'success'
                 })
@@ -37,7 +36,11 @@ class App extends Component {
         return (
             <div className="App">
                 <ReactToasterMessage showToaster={true} toasterType={this.state.toasterType}
-                                     closeToasterAfterTimer={this.state.toasterType == 'error'}/>
+                                     closeToasterAfterTimer={this.state.toasterType === 'error'}/>
+                <ReactToasterMessage showToaster={true} toasterType={'error'}
+                                     toasterMessage={'Error Occurred !!'}/>
+                <ReactToasterMessage showToaster={true} toasterType={'warning'}
+                                     toasterMessage={'Warning !!'}/>
             </div>
         );
     }
